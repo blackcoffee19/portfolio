@@ -1,0 +1,1 @@
+ npm i simplebar @frsource/tiny-carousel-core tiny-slider nouislider smooth-scroll parallax-js
