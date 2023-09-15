@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio - Projects</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://finder.createx.studio/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://finder.createx.studio/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://finder.createx.studio/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="node_modules//simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="node_modules/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" media="screen" href="node_modules/nouislider/dist/nouislider.min.css"/>
+    <link rel="stylesheet" media="screen" href="./css/theme.min.css">
+    <style>
+        .breadcrumb-item+.breadcrumb-item::before{
+            display: none;
+        }
+    </style>
+  <body>
+    <main class="page-wrapper">
+      <!-- Navbar-->
+      <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-scroll-header>
+        <div class="container"><a class="navbar-brand me-0 me-xl-4" href="index2.html">
+          <img class="d-block" src="./img/logo/logo-light.svg" width="116" ></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <a class="btn btn-link btn-light btn-sm d-none d-lg-block order-lg-3"  href="mailto:cattuongw2000@gmail.com" ><i class="fa-regular fa-paper-plane fa-lg me-3"></i>Contact</a>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html#intro" role="button">Introduce</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#education" role="button">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#technical" role="button">Technical skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#softskill" role="button">Soft skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html" role="button">Projects</a>
+              </li>
+              <li class="nav-item d-lg-none"><a class="nav-link"  href="mailto:cattuongw2000@gmail.com" ><i class="fa-regular fa-paper-plane fa-lg me-3"></i>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+        <div class="container-fluid" style="margin-top: 85px;">
+          <div class="row">
+            <div class="col-lg-3 col-md-5 position-relative">
+                <ul class="list-group list-group-flush mt-3 position-fixed">
+                    <li class="list-group-item">
+                        <a class="text-decoration-none text-dark h5" data-bs-toggle="collapse" href=".listh" role="button" aria-expanded="false" aria-controls="collapseExample">Self Project: H2SO4 <i class="fa-solid fa-chevron-down fa-sm"></i></a>
+                        <div class="collapse listh">
+                            <div class="card card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#fs_home" class="text-decoration-none">
+                                            Homepage
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_pl" class="text-decoration-none">List Product</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_pd"  class="text-decoration-none">Product Detail</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_modals"  class="text-decoration-none">Modals</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_sign" class="text-decoration-none">Sign In & Sign Up</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_pass" class="text-decoration-none">Forget Password</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_profset" class="text-decoration-none">Profile Setting</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_fav" class="text-decoration-none">Favourite</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_check" class="text-decoration-none">Checkout</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_admin" class="text-decoration-none">Admin site</a></li>
+                                    <li class="list-group-item">
+                                      <a href="#fs_host"class="text-decoration-none">Host site</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                          
+                    </li>
+                    <li class="list-group-item">
+                        <a class="text-decoration-none text-dark h5" data-bs-toggle="collapse" href=".listf" role="button" aria-expanded="false" aria-controls="collapseExample">Team Project: FreshCart <i class="fa-solid fa-chevron-down fa-sm"></i></a>
+                        <div class="collapse listf" >
+                            <div class="card card-body">
+                                <ul class="list-group">
+                                  <li class="list-group-item">
+                                    <a href="#fc_home" class="text-decoration-none">
+                                        Homepage
+                                    </a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_pl" class="text-decoration-none">List Product</a>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_pd"  class="text-decoration-none">Product Detail</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_modals"  class="text-decoration-none">Modals</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_sign" class="text-decoration-none">Sign In & Sign Up</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_pass" class="text-decoration-none">Forget Password</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_profset" class="text-decoration-none">Profile Setting</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_fav" class="text-decoration-none">Favourite</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_check" class="text-decoration-none">Checkout</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_admin" class="text-decoration-none">Admin site</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_host"class="text-decoration-none">Host site</a></li>
+                                  <li class="list-group-item">
+                                    <a href="#fc_about"class="text-decoration-none">About & Contact</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <section class="col-lg-9 col-md-7 mb-4 mb-md-5" >
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home<i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                    </ol>
+                </nav>
+                <h2 class="h3 pb-2 pb-sm-3">Projects</h2>
+                <div class="listh row">
+                  <h4 id="fs_home">Home Page</h4>
+                  <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Giao diện trang chủ gồm slider, 3 banner, carousel về danh mục nhóm thú cưng, hiện 10 thú cưng random ở Pupular Pets và 3 thú cưng bất kỳ đang có giảm giá.
+                          <br>Các thẻ thú cưng đều có nút thêm vào giỏ hàng, người dùng khi nhấn sẽ tự động thêm 1 thú cưng đó vào giỏ hàng. Nếu số lượng thú cưng đó đã thêm vào giỏ hàng bằng số lượng tối đa hiện có, trang sẽ hiện thông báo và không thể thêm được nữa, tương tự cho các chức năng thêm vào giỏ hàng ở các trang khác hoặc modal. 
+                        </p>
+                      </div>
+                      <img src="./Images/H2SO4/homepage2.png" alt="Homepage" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr >
+                  <h4 id="fs_pl" class="my-3">List Pets</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Trang hiển thị loạt danh sách thú cưng theo danh mục, có các chức năng như bộ lọc, sắp xếp theo các mức giá, số rating. KHi tìm kiếm thú cưng bằng tên trên thanh navbar sẽ hiện danh sách thú cưng có tên trùng khớp hoặc tương tự hiện trong trang này.</p></div>
+                    <img src="./Images/H2SO4/pet_list.png" alt="Product List" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fs_pd" class="my-3">Pet Detail</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Trong trang này, mọi thông tin chi tiết của thú cưng sẽ được hiển thị. Khách hàng được chọn trong số lượng tối đa của thú cưng đó để thêm vào giỏ hàng, hiện thị binh luận, đánh giá của người khác, nếu khách hàng đã đăng nhập có thể được bình luận. Thích đánh giá hoặc gửi bình luận phản hồi hoặc có thể xóa bình luận của mình.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                      <img src="./Images/H2SO4/pet_detail.png" alt="Product Detail" class="img-fluid shadow mb-3">
+                      <img src="./Images/H2SO4/pet_comment.png" alt="Product Detail" class="img-fluid shadow">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fs_modals" class=" my-3">Modals</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12 mt-3">
+                      <p class="text-dark">Modal hiển thị vài thông tin quan trọng của thú cưng, chọn số lượng thú cưng để thêm vào giỏ hàng hoặc lưu vào danh sách yêu thích hoặc danh sách so sánh.</p></div>
+                    <img src="./Images/H2SO4/model_pet.png" alt="Product Modal" class="img-fluid shadow mb-3 col-lg-9 col-md-12">
+                    <hr>
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">So sánh tối đa 3 thú cưng khác nhau, 1 thú cưng chỉ được thêm vào 1 lần trong mục so sánh. Có thể xóa 1 hoặc tất cả mục so sánh.</p></div>
+                    <img src="./Images/H2SO4/modal_compare.png" alt="Modal Compare" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fs_sign" class="my-3">Sign in & Sign up</h4>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Trang đăng ký thành viên của website, có thể đăng ký và đăng nhập bằng Gmail. Sau khi đăng ký hoặc đăng nhập, giỏ hàng hiện tại (trước đăng nhập) sẽ được giữ và lưu vào giỏ hàng của tài khoản đăng nhập.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/signup.png" alt="Sign up" class="img-fluid shadow mb-3">
+                      <hr>
+                      <img src="./Images/H2SO4/" alt="Sign in" class="img-fluid shadow ">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fs_pass" class="my-3">Forgot Password</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Khi khách hàng đã đăng ký tài khoản nhưng quên mật khẩu, có thể chọn 'Forgot password' để nhận đường link thay đổi mật khẩu qua email đăng ký.</p></div>
+                    <img src="./Images/H2SO4/" alt="Forget Password" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fs_profset" class="my-3">Profile Setting</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">Trang thông tin tài khoản đăng ký, có thể giúp khách hàng thay đổi tên, password, email, ảnh đại diện.<br>Khi khách hàng đăng ký tài khoản qua page 'Sign up', email khách hàng chưa được xác thực, nếu khách hàng nhấn nút 'Verify email' web sẽ gửi mail xác nhận đến tài khoản email của khách hàng</p></div>
+                    <div class=" col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/user_setting.png" alt="Profile Setting" class="img-fluid shadow">
+                    </div>
+                    <hr>
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">Người dùng có thể thay đổi các địa chỉ giao hàng của mình, được chọn địa chỉ giao hàng mặc định</p></div>
+                    <div class="col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/profie_address.png" alt="Profile address" class="img-fluid shadow ">
+                    </div>
+                    <hr>
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">Người dùng có thể xem lịch sử mua hàng của mình tại List order</p></div>
+                    <div class=" col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/user_order2.png" alt="Profile address" class="img-fluid shadow">
+                    </div>
+                    <hr>
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">Với các đơn hàng chưa được xác nhận và vận chuyển, người dùng có thể thay đổi địa chỉ giao hàng, số điện thoại, tên người nhận, tuy nhiên với các đơn đã thanh toán bằng Paypal, sẽ không thể thay đổi địa chỉ giao hàng sau khi thanh toán.</p></div>
+                    <div class="col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/user_edit_order.png" alt="Profile address" class="img-fluid shadow">
+                    </div>
+                    <hr>
+                    <div class="col-lg-3 col-md-12 mt-3"><p class="text-dark">Người dùng có thể xem thông tin đơn hàng đã mua</p></div>
+                    <div class="col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/H2SO4/user_orders.png" alt="Profile address" class="img-fluid shadow ">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fs_fav" class="my-3">Favourite</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Danh mục thú cưng yêu thích giúp người dùng có thể lưu thú cưng mình thích vào danh mục 'Favourite', danh mục ngày khác với giỏ hàng ở điểm, thú cưng trong danh mục này không mất đi sau khi khách hàng order, dù thú cưng đã <b>sold out</b> vẫn sẽ hiện thị trong mục 'Favourite'.</p>
+                    </div>
+                    <img src="./Images/H2SO4/favourite.png" alt="Favourite" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fs_check" class="my-3">Checkout</h4>
+                  <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Hiển thị danh sách thú cưng định mua ở phía bên phải, bên trái giúp người dùng có thể chọn địa điểm giao hàng, và phương thức thanh toán.</p>
+                      </div>
+                      <div class="col-lg-9 col-md-12">
+                        <img src="./Images/H2SO4/checkout1.png" alt="Checkout 1" class="img-fluid shadow mb-3">
+                        <img src="./Images/H2SO4/checkout2.png" alt="Checkout 2" class="img-fluid shadow">
+                      </div>
+                  </div>
+                  <hr>
+                  <h4 id="fs_admin" class="my-3">Admin site</h4>
+                  <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Đăng nhập vào trang quản trị. Nếu người dùng là quản trị viên, họ có thể vào bảng điều khiển quản trị viên.</p>
+                      </div>
+                      <div class="col-lg-9 col-md-12">
+                        <img src="./Images/H2SO4/admin-login2.png" alt="Admin Login 2" class="img-fluid shadow">
+                        <img src="./Images/H2SO4/admin-login1.png" alt="Admin Login 1" class="img-fluid shadow">
+                      </div>
+                    <hr>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Admin dashboard trang hiển thị thông tin, thống kê, doanh thu,lợi nhuận của cửa hàng.</p>
+                      </div>
+                      <img src="./Images/H2SO4/admin_dashboard.png" alt="Admin Dashboard" class="img-fluid shadow col-lg-9 col-md-12">
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Các trang quản lý danh mục thú cưng, thú cưng,</p>
+                      </div>
+                      <div class="col-lg-9 col-md-12">
+                        <img src="./Images/H2SO4/admin_listcate.png" alt="Admin" class="img-fluid shadow mb-3">
+                        <img src="./Images/H2SO4/admin_listpet.png" alt="Admin" class="img-fluid shadow mb-3">
+                        <img src="./Images/H2SO4/admin_listuser.png" alt="Admin" class="img-fluid shadow mb-3">
+                        <img src="./Images/H2SO4/admin_orderlist.png" alt="Admin" class="img-fluid shadow mb-3">
+                        <img src="./Images/H2SO4/admin_orderdetail.png" alt="Admin" class="img-fluid shadow mb-3">
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fs_sign" class="my-3">Host site</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-4 col-md-12">
+                      <p class="text-dark">Người dùng được phân quyền là Host, sẽ quản lý các đơn hàng mà khách hàng đã order, chỉnh sửa trạng thái đơn hàng trên web, chỉ chỉnh sửa các đơn như:</p>
+                      <ul>
+                        <li>Đơn chưa xác nhận (khách hàng vừa đặt hàng): -> Đã xác nhận hoặc đang vận chuyển</li>
+                        <li>Đơn đã xác nhận: -> đã vận chuyển</li>
+                        <li>Đơn đang vận chuyển: -> Giao thành công hoặc giao hàng không thành công</li>
+                      </ul>
+                    </div>
+                    <div class=" col-lg-9 col-md-12">
+                      <img src="./Images/H2SO4/manage_listorder.png" alt="Sign up" class="img-fluid shadow mb-3">
+                      <img src="./Images/H2SO4/manage_order.png" alt="Sign in" class="img-fluid shadow">
+                    </div>
+                  </div>
+                </div>
+                <div class="listf row">
+                   <h3>Fresh Cart</h3>
+                   <p>Vì đây là đồ án team work học kỳ II của FPT Aptech, nên em chỉ nêu những trang em đã đóng góp trong dự án của nhóm.</p>
+                  <h4 id="fc_home">Home Page</h4>
+                  <div class="row mb-3">
+                      <div class="col-lg-3 col-md-12">
+                        <p class="text-dark">Giao diện trang chủ gồm slider, 3 banner, carousel về danh mục nhóm sản phẩm, hiện 10 sản phẩm random ở Pupular Products và 3 sản phẩm bất kỳ đang có giảm giá.
+                          <br>Các thẻ sản phẩm đều có nút thêm vào giỏ hàng, người dùng khi nhấn sẽ tự động thêm 100g sản phẩm đó đó vào giỏ hàng. Nếu số lượng sản phẩm đó trong giỏ hàng bằng số lượng tối đa hiện có sẽ hiện thông báo và không thể thêm được nữa, tương tự cho các chức năng thêm vào giỏ hàng ở các trang khác hoặc modal.</p>
+                      </div>
+                      <img src="./Images/FreshCart/homepage.png" alt="Homepage" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr >
+                  <h4 id="fc_pl" class="my-3">List Products</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12"><i>Trang này em không làm nên chỉ để ảnh demo của web.</i></div>
+                    <img src="./Images/FreshCart/product_list.png" alt="Product List" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_pd" class="my-3">Product Detail</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12"><p class="text-dark">Trong trang này, mọi thông tin chi tiết của sản phẩm sẽ hiển thị. Khách hàng được chọn trong số lượng tối đa của sản phẩm đó để thêm vào giỏ hàng, ngoài ra trang còn hiện thị binh luận, đánh giá của người khác, nếu khách hàng đã đăng nhập có thể được bình luận và có thể xóa bình luận của mình.</p></div>
+                    <div class="col-lg-9 col-md-12">
+                      <img src="./Images/FreshCart/product_detail2.png" alt="Product Detail" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/product_detail.png" alt="Product Detail" class="img-fluid shadow ">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fc_modals" class="my-3">Modals</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Modal hiển thị vài thông tin quan trọng của sản phẩm, chọn số lượng sản phẩm để thêm vào giỏ hàng hoặc lưu vào danh sách yêu thích hoặc danh sách so sánh.</p>
+                    </div>
+                    <img src="./Images/FreshCart/modal_product.png" alt="Modal Product" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12"><p class="text-dark">So sánh tối đa 3 sản phẩm khác nhau, 1 sản phẩm chỉ được thêm vào 1 lần trong mục so sánh. Có thể xóa 1 hoặc tất cả mục so sánh.</p></div>
+                    <img src="./Images/FreshCart/modal_compare.png" alt="Modal Compare" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Khi nhấn vào Sign in hoặc các chức năng yêu cầu cần đăng nhập mới dùng được, modal đăng nhập sẽ hiển thị, cho phép người dùng đăng nhập nhanh vào tài khoản của mình bằng cách nhập email, password hoặc nhấn đăng nhập bằng Gmail. Nếu quên mật khẩu có thể chọn 'Forgot Password'.</p>
+                    </div>
+                    <img src="./Images/FreshCart/modal_signin.png" alt="Sign in" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Khi người dùng nhấp vào icon giỏ hàng phía trên bên phải gần icon user, danh sách sản phẩm hiện có trong giỏ hàng của người dùng sẽ hiện ra, Người dùng có thể thêm, xóa hoặc đến trang mua hàng.</p>
+                    </div>
+                    <img src="./Images/FreshCart/cart2.png" alt="Cart" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_sign" class="my-3">Sign in & Sign up</h4>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12"><p class="text-dark">Trang đăng ký thành viên của website, có thể đăng ký và đăng nhập bằng Gmail. Sau khi đăng ký hoặc đăng nhập, giỏ hàng hiện tại (trước đăng nhập) sẽ được giữ và lưu vào giỏ hàng của tài khoản đăng nhập.</p></div>
+                    <img src="./Images/FreshCart/signup.png" alt="Sign up" class="img-fluid shadow col-lg-9 col-md-12 mb-3">
+                  </div>
+                  <hr>
+                  <div class="row my-3" >
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Trang đăng nhập vào tài khoản đã được đăng ký, người dùng nhập email đã đăng ký, và password để đăng nhập hoặc nhấp đăng nhập bằng Google</p></div>
+                    <img src="./Images/FreshCart/" alt="Sign in" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_pass" class="my-3">Forget Password</h4>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Khi người dùng quên mật khẩu tài khoản của mình, có thể nhập địa chỉ email của tài khoản và web sẽ tự gửi link tạo mới mật khẩu qua mail đến tài khoản Gmail đã đăng ký.</p>
+                    </div>
+                    <img src="./Images/FreshCart/ResetPass.png" alt="Forget Password" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_profset" class="my-3">Profile Setting</h4>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12"><p class="text-dark">Trang thông tin tài khoản đăng ký, có thể giúp khách hàng thay đổi tên, password, email, ảnh đại diện.<br>Khi khách hàng đăng ký tài khoản qua page 'Sign up', email khách hàng chưa được xác thực, nếu khách hàng nhấn nút 'Verify email' web sẽ gửi mail xác nhận đến tài khoản email của khách hàng</p></div>
+                    <img src="./Images/FreshCart/editprofie.png" alt="Profile Setting" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Người dùng có thể thay đổi các địa chỉ giao hàng của mình, được chọn địa chỉ giao hàng mặc định</p>
+                    </div>
+                    <img src="./Images/FreshCart/edit_address.png" alt="Profile address" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Với các đơn hàng chưa được xác nhận và vận chuyển, người dùng có thể thay đổi địa chỉ giao hàng, số điện thoại, tên người nhận, tuy nhiên với các đơn đã thanh toán bằng Paypal, sẽ không thể thay đổi địa chỉ giao hàng sau khi thanh toán.</p>
+                    </div>
+                    <img src="./Images/FreshCart/edit_order.png" alt="Profile Order" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_fav" class="my-3">Favourite</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Danh mục sản phẩm yêu thích giúp người dùng có thể lưu sản phẩm mình thích vào danh mục 'Favourite', danh mục ngày khác với giỏ hàng ở điểm, sản phẩm trong danh mục này không mất đi sau khi khách hàng order, dù sản phẩm đã <b>sold out</b> vẫn sẽ hiện thị trong mục 'Favourite'.</p>
+                    </div>
+                    <img src="./Images/FreshCart/favourite.png" alt="Favourite" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_check" class="my-3">Checkout</h4>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Ở trang check out, người dùng có thể chọn địa chỉ giao hàng, thêm ghi chú, phương thức thanh toán, đơn vị vận chuyển cho đơn hàng. <b>Có 2 đơn vị vận chuyển là Giao hàng Nhanh và Giao hàng Tiết Kiệm</b>, web liên kết với API 2 đơn vị này nên sau khi chọn địa chỉ và đơn vị giao hàng, số tiền ship sẽ thay đổi theo mức giá của đơn vị vận chuyển đã chọn.</p>
+                    </div>
+                    <img src="./Images/FreshCart/checkout1.png" alt="Checkout 1" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Người dùng có thể thanh toán trực tiếp qua tài khoản Paypal.</p>
+                    </div>
+                    <img src="./Images/FreshCart/paypal.png" alt="Checkout 2" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <h4 id="fc_admin" class="my-3">Admin site</h4>
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Đăng nhập vào trang quản trị. Nếu người dùng là quản trị viên, họ có thể vào bảng điều khiển quản trị viên.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                      <img src="./Images/FreshCart/admin_login1.png" alt="Admin Login 1" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/admin_login2.png" alt="Admin Login 2" class="img-fluid shadow">
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12"><p class="text-dark">Admin dashboard trang hiển thị thông tin, thống kê, doanh thu,lợi nhuận của cửa hàng.</p></div>
+                    <img src="./Images/FreshCart/admin_dashboard.png" alt="Admin Dashboard" class="img-fluid shadow col-lg-9 col-md-12">
+                  </div>
+                  <hr>
+                  <div class="row my-3">
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Trong Admin CRUB, em chỉ hỗ trợ phần tạo, chỉnh sửa sản phẩm, do database em thiết kế có mục tính chi phí (chủ yếu để quản lý doanh thu bán hàng) nên chi phí được tạo khi sản phẩm được tạo hoặc chỉnh sửa. Chi phí có tác động đến biểu đồ trong trang Admin Dashboard.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                      <img src="./Images/FreshCart/admin_listproduct.png" alt="Admin" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/admin_editproduct.png" alt="Admin" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/admin_listorder.png" alt="Admin" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/admin_listbanner.png" alt="Admin" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/admin_listuser.png" alt="Admin" class="img-fluid shadow mb-3">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fc_host" class="my-3">Host site</h4>
+                  <div class="row my-3" >
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Người dùng được phân quyền là Host, sẽ quản lý các đơn hàng mà khách hàng đã order, chỉnh sửa trạng thái đơn hàng trên web, chỉ chỉnh sửa các đơn như:</p>
+                      <ul  class="text-dark">
+                        <li>Đơn chưa xác nhận (khách hàng vừa đặt hàng): -> Đã xác nhận hoặc đang vận chuyển</li>
+                        <li>Đơn đã xác nhận: -> đã vận chuyển</li>
+                        <li>Đơn đang vận chuyển: -> Giao thành công hoặc giao hàng không thành công</li>
+                      </ul>
+                      <p class="text-dark fw-bold">Khi ở tài khoản host và Admin, người dùng không thể sử dụng các chức năng mua hàng</p>
+                      <p class="text-dark">Khi Host nhấn vào icon Giỏ hàng sẽ hiển thị danh sách các đơn hàng <i>Chưa xác nhận</i>, <i>Đã xác nhận nhưng chưa vận chuyển</i>,<i>Đã vận chuyển</i>.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                      <img src="./Images/FreshCart/host_listorder.png" alt="Sign in" class="img-fluid shadow mb-3">
+                      <img src="./Images/FreshCart/manage_order.png" alt="Sign up" class="img-fluid shadow mb-3">
+                    </div>
+                  </div>
+                  <hr>
+                  <h4 id="fc_about" class="my-3">About & Contact</h4>
+                  <div class="row mb-3" >
+                    <div class="col-lg-3 col-md-12 mb-3">
+                      <i>Hai trang này em không làm, bạn cùng team em làm.</i>
+                    </div>
+                    <div class="col-lg-9 col-md-12 mb-3">
+                      <img src="./Images/FreshCart/about.png" alt="About" class="img-fluid mb-3 shadow">
+                      <img src="./Images/FreshCart/contact.png" alt="Contact" class="img-fluid mb-3 shadow">
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-dark pt-5">
+      <div class="container pb-2">
+        <div class="row align-items-center pb-4">
+          <div class="col-md-6 col-xl-5">
+            <!-- Links-->
+            <div class="row">
+              <div class="col-sm-4 mb-4">
+                <h3 class="h6 mb-2 pb-1 fs-base text-light">My Portfolio</h3>
+                <ul class="list-unstyled fs-sm">
+                  <li><a class="nav-link-light" href="index.html">About us</a></li>
+                  <li><a href="projects.html" class="nav-link-light">Projects</a></li>
+                  <li><a class="nav-link-light" href="mailto:cattuongw2000@gmail.com">Contacts</a></li>
+                </ul>
+              </div>
+              
+            <!-- Socials-->
+            <div class="text-nowrap border-top border-light py-4">
+              <a class="btn btn-icon btn-translucent-light btn-xs rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100009142213069"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+              <a class="btn btn-icon btn-translucent-light btn-xs rounded-circle me-2" href="https://github.com/blackcoffee19"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright-->
+        <p class="fs-sm text-center text-sm-start mb-4">
+          &copy; All rights reserved. Made by Cat Tuong
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <!-- Main theme script-->
+    <script src="./js/theme.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script src="node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="node_modules/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="node_modules/parallax-js/dist/parallax.min.js"></script>
+    <script src="node_modules/nouislider/dist/nouislider.min.js"></script>
+    <!-- Main theme script-->
+    
+    <script src="./asset/theme.min.js"></script>
+    <script src="https://kit.fontawesome.com/2f28ccbbd6.js" crossorigin="anonymous"></script>
+  </body>
+</html>
