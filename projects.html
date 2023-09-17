@@ -68,7 +68,7 @@
                 <ul class="list-group list-group-flush mt-3 position-fixed">
                     <li class="list-group-item">
                         <a class="text-decoration-none text-dark h5" data-bs-toggle="collapse" href=".listh" role="button" aria-expanded="false" aria-controls="collapseExample">Self Project: H2SO4 <i class="fa-solid fa-chevron-down fa-sm"></i></a>
-                        <div class="collapse listh">
+                        <div class="collapse listh show">
                             <div class="card card-body">
                                 <ul class="list-group">
                                     <li class="list-group-item">
@@ -151,7 +151,7 @@
                     </ol>
                 </nav>
                 <h2 class="h3 pb-2 pb-sm-3">Projects</h2>
-                <div class="listh row">
+                <div class="listh row collapse show">
                   <h4 id="fs_home">Home Page</h4>
                   <div class="row mb-3">
                       <div class="col-lg-3 col-md-12">
@@ -181,6 +181,7 @@
                   </div>
                   <hr>
                   <h4 id="fs_modals" class=" my-3">Modals</h4>
+                  
                   <div class="row mb-3">
                     <div class="col-lg-3 col-md-12 mt-3">
                       <p class="text-dark">Modal hiển thị vài thông tin quan trọng của thú cưng, chọn số lượng thú cưng để thêm vào giỏ hàng hoặc lưu vào danh sách yêu thích hoặc danh sách so sánh.</p></div>
@@ -198,15 +199,15 @@
                     <div class="col-lg-9 col-md-12 mb-3">
                       <img src="./Images/H2SO4/signup.png" alt="Sign up" class="img-fluid shadow mb-3">
                       <hr>
-                      <img src="./Images/H2SO4/" alt="Sign in" class="img-fluid shadow ">
+                      <img src="./Images/H2SO4/signin.png" alt="Sign in" class="img-fluid shadow ">
                     </div>
                   </div>
                   <hr>
-                  <h4 id="fs_pass" class="my-3">Forgot Password</h4>
+                  <h4 id="fs_pass" class="my-3">Reset Password</h4>
                   <div class="row mb-3">
                     <div class="col-lg-3 col-md-12">
-                      <p class="text-dark">Khi khách hàng đã đăng ký tài khoản nhưng quên mật khẩu, có thể chọn 'Forgot password' để nhận đường link thay đổi mật khẩu qua email đăng ký.</p></div>
-                    <img src="./Images/H2SO4/" alt="Forget Password" class="img-fluid shadow col-lg-9 col-md-12">
+                      <p class="text-dark">Khi khách hàng đã đăng ký tài khoản nhưng quên mật khẩu, có thể chọn 'Reset password' để nhận đường link thay đổi mật khẩu qua email đăng ký.</p></div>
+                    <img src="./Images/H2SO4/forgotpass.png" alt="Forget Password" class="img-fluid shadow col-lg-9 col-md-12">
                   </div>
                   <hr>
                   <h4 id="fs_profset" class="my-3">Profile Setting</h4>
@@ -248,23 +249,64 @@
                   <h4 id="fs_check" class="my-3">Checkout</h4>
                   <div class="row mb-3">
                       <div class="col-lg-3 col-md-12">
-                        <p class="text-dark">Hiển thị danh sách thú cưng định mua ở phía bên phải, bên trái giúp người dùng có thể chọn địa điểm giao hàng, và phương thức thanh toán.</p>
+                        <p class="text-dark">Đầu tiên sau khi người dùng chọn check out, người dùng sẽ được xem lại danh sách giỏ hàng của mình. Sau khi xác định và chọn 'Buy Now' người dùng sẽ đến trang điền thông tin mua hàng hoặc chọn địa chỉ thanh toán (với người dùng đẽ đăng ký tài khoản)<br> Cho phép người dùng đã đăng ký tài khoản và cả người dùng chưa đăng ký tài khoản đều được phép mua hàng.<br><b>Tuy nhiên người dùng chưa đăng ký tài khoản không đăng ký tài khoản sẽ không nhận được hoặc sử dụng mã khuyến mãi.</b></p>
                       </div>
-                      <div class="col-lg-9 col-md-12">
-                        <img src="./Images/H2SO4/checkout1.png" alt="Checkout 1" class="img-fluid shadow mb-3">
-                        <img src="./Images/H2SO4/checkout2.png" alt="Checkout 2" class="img-fluid shadow">
+                      <div class="col-lg-9 col-md-12 my-auto" style="height: 710px;">
+                        <div id="checkout_slide" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./Images/H2SO4/sub_checkout.png" alt="sub checkout" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/checkout_guest.png" alt="Checkout" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/checkout_guest2.png" alt="Checkout" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/checkout1.png" alt="Checkout 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/checkout2.png" alt="Checkout 2" class="d-block w-100">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#checkout_slide" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#checkout_slide" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
                       </div>
                   </div>
                   <hr>
                   <h4 id="fs_admin" class="my-3">Admin site</h4>
                   <div class="row mb-3">
-                      <div class="col-lg-3 col-md-12">
-                        <p class="text-dark">Đăng nhập vào trang quản trị. Nếu người dùng là quản trị viên, họ có thể vào bảng điều khiển quản trị viên.</p>
+                    <div class="col-lg-3 col-md-12">
+                      <p class="text-dark">Đăng nhập vào trang quản trị. Nếu người dùng là quản trị viên, họ có thể vào bảng điều khiển quản trị viên.</p>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                      <div id="admin_sign2" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/H2SO4/admin-login2.png"  class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/H2SO4/admin-login1.png"  class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#admin_sign2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#admin_sign2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                       </div>
-                      <div class="col-lg-9 col-md-12">
-                        <img src="./Images/H2SO4/admin-login2.png" alt="Admin Login 2" class="img-fluid shadow">
-                        <img src="./Images/H2SO4/admin-login1.png" alt="Admin Login 1" class="img-fluid shadow">
-                      </div>
+                    </div>
                     <hr>
                     <div class="row mb-3">
                       <div class="col-lg-3 col-md-12">
@@ -278,11 +320,30 @@
                         <p class="text-dark">Các trang quản lý danh mục thú cưng, thú cưng,</p>
                       </div>
                       <div class="col-lg-9 col-md-12">
-                        <img src="./Images/H2SO4/admin_listcate.png" alt="Admin" class="img-fluid shadow mb-3">
-                        <img src="./Images/H2SO4/admin_listpet.png" alt="Admin" class="img-fluid shadow mb-3">
-                        <img src="./Images/H2SO4/admin_listuser.png" alt="Admin" class="img-fluid shadow mb-3">
-                        <img src="./Images/H2SO4/admin_orderlist.png" alt="Admin" class="img-fluid shadow mb-3">
-                        <img src="./Images/H2SO4/admin_orderdetail.png" alt="Admin" class="img-fluid shadow mb-3">
+                        <div id="admin_crud" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./Images/H2SO4/admin_listcate.png" alt="Admin" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/admin_listpet.png" alt="Admin"  class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/admin_orderlist.png" alt="Admin"  class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./Images/H2SO4/admin_orderdetail.png" alt="Admin" class="d-block w-100">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#admin_crud" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#admin_crud" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -297,13 +358,13 @@
                         <li>Đơn đang vận chuyển: -> Giao thành công hoặc giao hàng không thành công</li>
                       </ul>
                     </div>
-                    <div class=" col-lg-9 col-md-12">
+                    <div class=" col-lg-8 col-md-12">
                       <img src="./Images/H2SO4/manage_listorder.png" alt="Sign up" class="img-fluid shadow mb-3">
                       <img src="./Images/H2SO4/manage_order.png" alt="Sign in" class="img-fluid shadow">
                     </div>
                   </div>
                 </div>
-                <div class="listf row">
+                <div class="listf row collapse">
                    <h3>Fresh Cart</h3>
                    <p>Vì đây là đồ án team work học kỳ II của FPT Aptech, nên em chỉ nêu những trang em đã đóng góp trong dự án của nhóm.</p>
                   <h4 id="fc_home">Home Page</h4>
@@ -324,9 +385,25 @@
                   <h4 id="fc_pd" class="my-3">Product Detail</h4>
                   <div class="row mb-3">
                     <div class="col-lg-3 col-md-12"><p class="text-dark">Trong trang này, mọi thông tin chi tiết của sản phẩm sẽ hiển thị. Khách hàng được chọn trong số lượng tối đa của sản phẩm đó để thêm vào giỏ hàng, ngoài ra trang còn hiện thị binh luận, đánh giá của người khác, nếu khách hàng đã đăng nhập có thể được bình luận và có thể xóa bình luận của mình.</p></div>
-                    <div class="col-lg-9 col-md-12">
-                      <img src="./Images/FreshCart/product_detail2.png" alt="Product Detail" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/product_detail.png" alt="Product Detail" class="img-fluid shadow ">
+                    <div class="col-lg-9 col-md-12 my-auto" style="height: 710px;">
+                      <div id="checkout_slide" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/FreshCart/product_detail2.png" alt="Product Detail" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/product_detail.png" alt="Product Detail" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#checkout_slide" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#checkout_slide" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <hr>
@@ -360,15 +437,32 @@
                   <h4 id="fc_sign" class="my-3">Sign in & Sign up</h4>
                   <div class="row my-3">
                     <div class="col-lg-3 col-md-12"><p class="text-dark">Trang đăng ký thành viên của website, có thể đăng ký và đăng nhập bằng Gmail. Sau khi đăng ký hoặc đăng nhập, giỏ hàng hiện tại (trước đăng nhập) sẽ được giữ và lưu vào giỏ hàng của tài khoản đăng nhập.</p></div>
-                    <img src="./Images/FreshCart/signup.png" alt="Sign up" class="img-fluid shadow col-lg-9 col-md-12 mb-3">
+                    <div class="col-lg-9 col-md-12" >
+                      <div id="sign2" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img  src="./Images/FreshCart/modal_signin.png" alt="Sign in" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/signup.png" alt="Sign in" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/signin.png" alt="Sign in" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sign2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sign2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <hr>
-                  <div class="row my-3" >
-                    <div class="col-lg-3 col-md-12">
-                      <p class="text-dark">Trang đăng nhập vào tài khoản đã được đăng ký, người dùng nhập email đã đăng ký, và password để đăng nhập hoặc nhấp đăng nhập bằng Google</p></div>
-                    <img src="./Images/FreshCart/" alt="Sign in" class="img-fluid shadow col-lg-9 col-md-12">
-                  </div>
-                  <hr>
+                  
                   <h4 id="fc_pass" class="my-3">Forget Password</h4>
                   <div class="row my-3">
                     <div class="col-lg-3 col-md-12">
@@ -426,8 +520,24 @@
                       <p class="text-dark">Đăng nhập vào trang quản trị. Nếu người dùng là quản trị viên, họ có thể vào bảng điều khiển quản trị viên.</p>
                     </div>
                     <div class="col-lg-9 col-md-12">
-                      <img src="./Images/FreshCart/admin_login1.png" alt="Admin Login 1" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/admin_login2.png" alt="Admin Login 2" class="img-fluid shadow">
+                      <div id="admin_login" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/FreshCart/admin_login1.png" alt="sub checkout" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/admin_login2.png" alt="Checkout" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#admin_login" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#admin_login" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <hr>
@@ -440,12 +550,34 @@
                     <div class="col-lg-3 col-md-12">
                       <p class="text-dark">Trong Admin CRUB, em chỉ hỗ trợ phần tạo, chỉnh sửa sản phẩm, do database em thiết kế có mục tính chi phí (chủ yếu để quản lý doanh thu bán hàng) nên chi phí được tạo khi sản phẩm được tạo hoặc chỉnh sửa. Chi phí có tác động đến biểu đồ trong trang Admin Dashboard.</p>
                     </div>
-                    <div class="col-lg-9 col-md-12">
-                      <img src="./Images/FreshCart/admin_listproduct.png" alt="Admin" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/admin_editproduct.png" alt="Admin" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/admin_listorder.png" alt="Admin" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/admin_listbanner.png" alt="Admin" class="img-fluid shadow mb-3">
-                      <img src="./Images/FreshCart/admin_listuser.png" alt="Admin" class="img-fluid shadow mb-3">
+                    <div class="col-lg-9 col-md-12" >
+                      <div id="admin_crud2" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/FreshCart/admin_listproduct.png" alt="Admin" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img  src="./Images/FreshCart/admin_editproduct.png" alt="Admin" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/admin_listorder.png" alt="Admin" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/admin_listbanner.png" alt="Admin" class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/admin_listuser.png" alt="Admin" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#admin_crud2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#admin_crud2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                   <hr>
@@ -472,11 +604,26 @@
                     <div class="col-lg-3 col-md-12 mb-3">
                       <i>Hai trang này em không làm, bạn cùng team em làm.</i>
                     </div>
-                    <div class="col-lg-9 col-md-12 mb-3">
-                      <img src="./Images/FreshCart/about.png" alt="About" class="img-fluid mb-3 shadow">
-                      <img src="./Images/FreshCart/contact.png" alt="Contact" class="img-fluid mb-3 shadow">
+                    <div class="col-lg-9 col-md-12 mb-3" >
+                      <div id="about" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./Images/FreshCart/about.png" alt="About"  class="d-block w-100">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./Images/FreshCart/contact.png" alt="Contact" class="d-block w-100">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#about" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#about" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     </div>
-                  </div>
                 </div>
             </section>
         </div>
